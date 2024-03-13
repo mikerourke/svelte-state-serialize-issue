@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.2",
-    "@types/node": "^20.11.24",
     "electron": "^29.1.0",
     "electron-vite": "^2.1.0",
     "prettier": "^3.2.5",
