@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "~/*": ["src/*"]
+    },
+    "strict": true,
+    "types": ["electron-vite/node"],
+    "verbatimModuleSyntax": true
+  },
+  "include": [
+    "electron.vite.config.*",
+    "vitest.config.ts",
+    "vitest.setup.ts",
+    "src/main/**/*",
+    "src/preload/**/*"
+  ]
+}

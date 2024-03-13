@@ -1,0 +1,118 @@
+:root {
+  --color-surface-900: oklch(24% 0 90deg);
+  --color-surface-800: oklch(28% 0 90deg);
+  --color-surface-700: oklch(32% 0 90deg);
+  --color-surface-600: oklch(36% 0 90deg);
+  --color-surface-500: oklch(40% 0 90deg);
+  --color-surface-400: oklch(44% 0 90deg);
+  --color-surface-300: oklch(48% 0 90deg);
+  --color-surface-200: oklch(52% 0 90deg);
+  --color-surface-100: oklch(60% 0 90deg);
+  --color-text: oklch(90% 0 90deg);
+  --font-family-display: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  text-size-adjust: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  font-size: 16px;
+  font-family: var(--font-family-display);
+  font-weight: var(--font-weight-regular);
+  background-color: var(--color-surface-900);
+  color: var(--color-text);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/*
+ * #region CSS Resets
+ * Taken from https://piccalil.li/blog/a-more-modern-css-reset/.
+ */
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  /* noinspection CssInvalidPropertyValue */
+  text-wrap: balance;
+}
+
+/* Make images easier to work with. */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons. */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny. */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin. */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* #endregion */
+
+button {
+  appearance: none;
+  width: fit-content;
+  box-shadow: none;
+  border: none;
+}
