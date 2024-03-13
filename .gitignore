@@ -89,5 +89,4 @@ dist
 .vscode-test
 
 # Non-pnpm package lock files
-package-lock.json
 yarn.lock

@@ -3,7 +3,7 @@
 module.exports = {
   trailingComma: "all",
   htmlWhitespaceSensitivity: "ignore",
-  plugins: [require("prettier-plugin-svelte")],
+  plugins: ["prettier-plugin-svelte"],
   overrides: [
     {
       files: "*.svelte",

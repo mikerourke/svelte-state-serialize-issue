@@ -1,19 +1,19 @@
 {
-  "name": "electron-svelte-vite-boilerplate",
+  "name": "svelte-state-serialize-issue",
   "version": "1.0.0",
-  "description": "",
-  "main": "./out/build/main/main.js",
-  "type": "module",
+  "description": "Minimal reproducible example for Svelte state serialization issues.",
+  "main": "./out/main/index.js",
   "scripts": {
-    "commit": "cz",
     "start": "electron-vite dev",
     "build": "electron-vite build",
     "prettier": "prettier --cache --write src",
-    "svelte-check": "svelte-check --tsconfig ./tsconfig.json",
-    "typecheck": "tsc --noEmit"
+    "svelte-check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "author": "Mike Rourke <mike.w.rourke@gmail.com>",
   "license": "MIT",
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.1"
+  },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.2",
     "@types/node": "^20.11.24",
@@ -22,8 +22,6 @@
     "prettier": "^3.2.5",
     "prettier-plugin-svelte": "^3.2.2",
     "svelte": "5.0.0-next.78",
-    "svelte-check": "^3.6.6",
-    "tslib": "^2.6.2",
-    "typescript": "^5.3.3"
+    "svelte-check": "^3.6.6"
   }
 }
